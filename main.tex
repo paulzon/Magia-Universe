@@ -1,0 +1,1525 @@
+\documentclass[12pt,oneside]{book}
+
+% --- Sprache & Encoding ---
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+
+% --- Seitenlayout ---
+\usepackage{geometry}
+\geometry{
+  paperwidth=148mm,   % A5
+  paperheight=210mm,
+  inner=20mm,
+  outer=20mm,
+  top=25mm,
+  bottom=25mm
+}
+
+% --- Farben & Pergament-Hintergrund ---
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\definecolor{Parchment}{HTML}{F3E7C9}
+\pagecolor{Parchment}
+
+% --- Handschriftähnliche Schrift ---
+\renewcommand{\rmdefault}{pzc}
+
+% --- Kopf-/Fußzeilen ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage{hyperref}
+
+% --- Creative Commons Lizenz (CC BY 4.0) ---
+\usepackage[
+  type={CC},
+  modifier={by},
+  version={4.0}
+]{doclicense}
+
+% --- Titel ---
+\title{\Huge Magia Universe\\[0.5em]
+\LARGE Magia-Universum: Richtlinien}
+\author{Paul Röwer}
+\date{\today}
+
+\begin{document}
+
+% ================== VORDERER EINBAND (Titelseite) ==================
+\frontmatter
+\begin{titlepage}
+  \thispagestyle{empty}
+  \vspace*{2cm}
+  \begin{center}
+    {\Huge Magia Universe}\\[1.0cm]
+    {\LARGE Magia-Universum: Richtlinien}\\[2cm]
+
+    % Geänderte Zeile:
+    {\large Ein Projekt von \href{https://www.youtube.com/@paulsnerdlounge}{Paul's Nerd Lounge}}\\[1cm]
+
+    {\large \doclicenseIcon}\\[0.5cm]
+    {\small Dieses Werk steht unter der\\
+    Creative-Commons-Lizenz CC BY 4.0.}
+  \end{center}
+
+  \vfill
+  \begin{center}
+    {\small Version 1.0}
+  \end{center}
+\end{titlepage}
+
+% Rückseite des vorderen Einbands
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+  {\itshape
+    „Magie ist nur dann frei,\\
+    wenn auch die Geschichten frei sind.“
+  }
+\end{center}
+\vspace*{\fill}
+\newpage
+
+% ================== LIZENZSEITE ==================
+\chapter*{Lizenz}
+\addcontentsline{toc}{chapter}{Lizenz}
+
+Dieses Buch \emph{Magia Universe – Magia-Universum: Richtlinien}
+steht unter der Creative-Commons-Lizenz
+\textbf{CC BY 4.0 (Namensnennung)}.
+
+Das bedeutet kurz zusammengefasst:
+\begin{itemize}
+  \item Du darfst dieses Werk teilen, verändern und kommerziell nutzen.
+  \item Du musst den ursprünglichen Autor \textbf{Paul Röwer} nennen.
+  \item Du darfst jede Lizenz für abgeleitete Werke wählen.
+\end{itemize}
+
+\doclicenseThis
+
+\newpage
+
+% ================== INHALTSVERZEICHNIS ==================
+\tableofcontents
+\newpage
+
+% ================== HAUPTTEIL ==================
+\mainmatter
+
+% ---------- Einleitung ----------
+\chapter{Einleitung}
+
+Das \textbf{Magia-Universum} ist eine bewusst offene, gemeinschaftlich
+nutzbare magische Welt. Sie wurde mit einem klaren Ziel erschaffen:
+Menschen, die Geschichten erzählen oder Welten bauen wollen, sollen
+\emph{nicht} jedes Mal wieder bei Null anfangen müssen.
+
+Stattdessen bekommst du hier ein solides, aber nicht übermäßig komplexes
+Fundament:
+\begin{itemize}
+  \item ein nachvollziehbares Magiesystem,
+  \item wiederverwendbare Wesen, Fraktionen und Orte,
+  \item sowie Richtlinien, die helfen, neue Ideen stimmig einzubauen.
+\end{itemize}
+
+Dieses Buch richtet sich sowohl an Autorinnen und Autoren als auch an
+Spieleentwickler, Zeichnerinnen, Rollenspielleiter und alle anderen,
+die mit einer konsistenten, frei nutzbaren magischen Welt arbeiten
+möchten.
+
+\section{Ziel dieses Buches}
+
+Das Ziel ist \emph{nicht}, jede nur denkbare Kleinigkeit des
+Magia-Universums bis ins letzte Detail festzulegen. Stattdessen soll
+dieses Buch:
+\begin{enumerate}
+  \item die \textbf{Grundlogik der Welt} erklären,
+  \item klare \textbf{Regeln für Magie} und ihre Grenzen geben,
+  \item typische \textbf{Wesen, Orte und Strukturen} vorstellen,
+  \item und \textbf{Richtlinien} anbieten, wie neue Inhalte
+        dazu passen können.
+\end{enumerate}
+
+\section{Offene Nutzung}
+
+Dieses Universum ist ausdrücklich dafür gedacht, benutzt, erweitert
+und angepasst zu werden – in Romanen, Computerspielen, Comics,
+Pen-and-Paper-Rollenspielen und jedem anderen Medium.  
+Die einzige Bedingung: Du nennst \textbf{Paul Röwer} als Ursprung
+dieses Magierbuchs.
+
+\newpage
+
+% =========================================================
+% 1. Die Magie des Magia-Universums
+% =========================================================
+\chapter{Die Magie des Magia-Universums}
+\label{chap:magie}
+
+\section{Das Wesen der Magie}
+
+Magie existiert im Magia-Universum in vielen Dingen und Wesen – aber
+nicht in allen. In manchen Lebewesen, Gegenständen oder Orten ist
+Magie nur als leiser Funke vorhanden, in anderen pulsiert sie stark,
+und bei vielen fehlt sie vollständig.
+
+Immer dann, wenn Magie vorhanden ist, kann sie \emph{geweckt} und
+\emph{geleitet} werden. In diesem Buch sprechen wir davon, Magie zu
+\emph{entfalten}.  
+Magie entsteht also nicht aus dem Nichts, sondern wird aus dem
+heraus geformt, was bereits da ist.
+
+\section{Magie in Dingen und Wesen}
+
+Es gibt drei einfache Grundfälle:
+
+\begin{enumerate}
+  \item \textbf{Wesen mit Magie}:  
+        Zum Beispiel Magierinnen, Magier oder bestimmte magische
+        Kreaturen. In ihnen fließt Magie von Natur aus. Sie können
+        lernen, diese Kraft bewusst zu entfalten.
+  \item \textbf{Dinge mit Magie}:  
+        Manche Materialien, Orte oder Gegenstände enthalten bereits
+        von sich aus Magie – etwa seltene Metalle, besondere Hölzer
+        oder alte Ruinen.
+  \item \textbf{Ganz gewöhnliche Dinge}:  
+        In den meisten Alltagsgegenständen ist keine nennenswerte
+        Magie vorhanden. Sie bleiben in der Regel unmagisch, es sei
+        denn, jemand wirkt gezielt Magie auf sie.
+\end{enumerate}
+
+Für Geschichten und Spiele bedeutet das: Nicht alles ist automatisch
+magisch. Magie ist etwas Besonderes, das bewusst entdeckt und genutzt
+werden muss.
+
+\section{Verzauberung statt Erschaffen}
+
+Ein zentrales Prinzip im Magia-Universum lautet:
+
+\begin{quote}
+  \textbf{Magie erschafft nichts aus dem Nichts.}
+\end{quote}
+
+Magie kann Dinge verändern, verstärken, formen oder verbinden – aber
+sie ersetzt nicht die Grundlage. Wer etwas Magisches erschaffen will,
+braucht immer \emph{Material}, an dem die Magie anknüpfen kann.
+
+\subsection*{Schritte einer Verzauberung}
+
+Typisch läuft eine Verzauberung so ab:
+
+\begin{enumerate}
+  \item Es wird ein geeignetes Material gewählt  
+        (zum Beispiel Holz, Stein, Metall, Stoff, eine Flüssigkeit).
+  \item Dieses Material muss \emph{magiefähig} sein – entweder trägt
+        es bereits einen Funken Magie in sich, oder es wird zuerst
+        durch einen Zauber dafür geöffnet.
+  \item Die Magierin oder der Magier entfaltet ihre eigene Magie
+        oder nutzt eine äußere Quelle und bindet diese Kraft in das
+        Material ein.
+\end{enumerate}
+
+Das Ergebnis ist ein \textbf{magischer Gegenstand}. Wird besonders
+viel oder besonders gezielte Magie gebunden, spricht man von einem
+\textbf{Artefakt} (siehe Kapitel „Artefakte und mächtige Relikte“, S.~\ref{chap:artefakte}).
+
+\section{Grenzen der Magie}
+
+Weil Magie nicht aus dem Nichts erschafft, gibt es klare Grenzen:
+
+\begin{itemize}
+  \item Große Wirkungen brauchen viel Material oder sehr geeignetes
+        Material.
+  \item Ohne vorhandene Magie lässt sich nichts „einfach so“
+        dauerhaft verzaubern.
+  \item Je mehr Magie in etwas gebunden wird, desto instabiler kann
+        es werden, wenn ungeschickt gearbeitet wurde.
+\end{itemize}
+
+So bleibt Magie mächtig, aber nicht beliebig. Sie ist ein Werkzeug,
+kein Cheatcode.
+
+\section{Das Prinzip des Gleichgewichts}
+
+Auch wenn dieses Buch die Welt bewusst einfach hält, gilt ein
+Grundsatz immer:
+
+\begin{quote}
+  Magie verändert die Welt – und die Welt reagiert darauf.
+\end{quote}
+
+Wer ständig Dinge verstärkt, verschiebt oder verzaubert, greift in
+das Gleichgewicht der Welt ein. In Geschichten kann das bedeuten:
+ungewollte Nebenwirkungen, Erschöpfung, seltene Störungen der
+Realität oder das Aufwachen alter Kräfte.
+
+Genau \emph{wie stark} diese Folgen sind, liegt bei dir als
+Autorin, Spielleiter oder Entwicklerin – wichtig ist nur:
+Magie hat immer einen Preis, auch wenn er nicht sofort sichtbar ist.
+
+\newpage
+
+% =========================================================
+% 2. Magierinnen, Magier und Nomags
+% =========================================================
+\chapter{Magierinnen, Magier und Nomags}
+\label{chap:magier}
+
+\section{Menschen mit Magie im Blut}
+
+Magierinnen und Magier sind Menschen, in deren Blut bereits Magie
+vorhanden ist. Dieser magische Funke ist nicht sichtbar, aber er
+schläft von Geburt an in ihnen und wartet darauf, sich zu zeigen.
+
+Magie ist dabei kein fremdes Anhängsel, sondern ein Teil ihrer
+Natur. Sie denken, fühlen und reagieren wie andere Menschen auch –
+aber in ihnen liegt die Möglichkeit, Magie zu \emph{entfalten} und
+bewusst zu lenken.
+
+\section{Die magische Pubertät}
+
+Der erste spürbare Ausbruch der Magie zeigt sich in der Regel in der
+Pubertät. In dieser Zeit beginnt der innere Funke, nach außen zu
+drängen. Typische erste Zeichen sind zum Beispiel:
+
+\begin{itemize}
+  \item kleine Gegenstände, die sich kurz bewegen, ohne berührt zu werden,
+  \item Farben von Dingen, die für einen Moment blasser oder kräftiger wirken,
+  \item leises Flackern von Licht, wenn starke Gefühle im Spiel sind,
+  \item ein Gefühl von „Kribbeln“ in den Händen, wenn Magie in der Nähe ist.
+\end{itemize}
+
+Welche Art von kleinen Effekten zuerst auftaucht, hängt oft mit dem
+\emph{magischen Talent} der Person zusammen  
+(siehe Kapitel „Magische Berufe und Talente“, S.~\ref{chap:berufe}).
+
+In dieser Phase passiert vieles unbewusst. Die Jugendlichen können
+die Effekte selten kontrollieren und oft machen ihnen diese Erlebnisse
+auch Angst – vor allem, wenn sie in einer reinen Nomag-Umgebung
+aufwachsen und niemand erklären kann, was da geschieht.
+
+\section{Warum Zauberstäbe nötig sind}
+
+Auch wenn der innere Funke stark ist:  
+Ohne Hilfsmittel können Magierinnen und Magier ihre Magie nur sehr
+grob und unzuverlässig einsetzen. Kleine Effekte sind möglich, aber
+richtiges Zaubern im Sinne von klaren, wiederholbaren Zaubersprüchen
+erfordert ein Werkzeug.
+
+Im Magia-Universum ist dieses Werkzeug fast immer ein \textbf{Zauberstab}:
+
+\begin{itemize}
+  \item Er konzentriert den inneren Funken,
+  \item leitet die Magie in eine bestimmte Form,
+  \item und schützt die Zaubernden vor einem Großteil der
+        Rückwirkungen.
+\end{itemize}
+
+Ohne Zauberstab bleibt Magie etwas Wildes und Instabiles, das sich nur
+in Ausnahmesituationen sinnvoll nutzen lässt.  
+Mit Zauberstab wird aus roher Magie ein \emph{Zauber}.
+
+Die Details dazu – Materialien, Bindung und Grenzen – werden im
+Kapitel über Zauberstäbe beschrieben  
+(siehe Kapitel „Zauberstäbe und ihre Bindung“, S.~\ref{chap:zauberstaebe}).
+
+\section{Familien und Herkunft}
+
+Magie vererbt sich nicht streng, aber sie ist auch kein völliger Zufall.
+Es gibt einige einfache Beobachtungen, an denen sich Magierinnen und
+Magier orientieren:
+
+\begin{itemize}
+  \item Kinder von zwei magischen Elternteilen haben eine hohe
+        Wahrscheinlichkeit, selbst Magierinnen oder Magier zu werden.
+  \item Kinder von gemischten Elternteilen (eine magische, eine
+        nicht-magische Person) haben eine spürbare, aber geringere
+        Wahrscheinlichkeit.
+  \item Auch Kinder von zwei Nomags können magische Kinder bekommen –
+        das kommt seltener vor, ist aber möglich und wichtig für das
+        Gleichgewicht der Welt.
+\end{itemize}
+
+Umgekehrt gibt es auch Fälle, in denen zwei magische Eltern ein Kind
+bekommen, das \emph{kein} magisches Talent entwickelt. Solche Kinder
+werden als Nomags betrachtet, auch wenn sie in einer magischen
+Familie aufgewachsen sind.
+
+Wichtig ist:  
+Niemand gilt als „mehr wert“ oder „weniger wert“, nur weil Magie
+vorhanden ist oder nicht. Die Gesellschaft der Magierwelt ist zwar
+stark von Magie geprägt, aber sie ist darauf angewiesen, mit Nomags
+zusammenzuleben und von ihnen zu lernen.
+
+\section{Nomags: das Leben ohne Magie}
+
+Nomags sind Menschen ohne eigenes magisches Talent. Für sie läuft das
+Leben in der Regel ganz normal – Schule, Arbeit, Familie, Alltag – ohne
+Bewusstsein dafür, dass es überhaupt ein Magier-Universum gibt.
+
+Die meisten Nomags:
+
+\begin{itemize}
+  \item wissen nichts von der Existenz der magischen Welt,
+  \item deuten magische Ereignisse als Zufälle, Träume oder
+        Fehlwahrnehmungen,
+  \item oder begegnen Magie nie bewusst in ihrem Leben.
+\end{itemize}
+
+Eine wichtige Ausnahme sind Nomags, die in einer magischen Familie
+aufwachsen: Kinder von Magierinnen und Magiern, die selbst kein Talent
+entwickeln. Sie kennen beide Welten – die magische und die nomagische –,\nauch wenn sie selbst keine Zauber wirken können.
+
+\section{Finder: die Brücke zwischen den Welten}
+
+Ein Teil dieser Nomags aus Magierfamilien wird zu \textbf{Findern}
+ausgebildet (siehe auch Kapitel „Magische Berufe und Talente“,
+S.~\ref{chap:berufe}). Ihre Aufgabe ist es, eine Brücke zwischen den
+Welten zu sein.
+
+In der Ausbildung lernen Finder zum Beispiel:
+
+\begin{itemize}
+  \item magische Spuren zu erkennen, ohne selbst zu zaubern,
+  \item Anzeichen magischer Pubertät bei Kindern zu deuten,
+  \item und sicher zwischen der magischen und der nomagischen Welt
+        zu wechseln.
+\end{itemize}
+
+Nach ihrer Ausbildung verlassen viele Finder die sichtbare Magierwelt
+durch Portale und leben wieder in der normalen Welt der Nomags. Dort:
+
+\begin{itemize}
+  \item halten sie Ausschau nach Kindern von Nomags, bei denen Magie
+        erwacht,
+  \item erklären diesen Kindern (und manchmal ihren Familien), was mit
+        ihnen geschieht,
+  \item und bringen sie – wenn die Kinder es wollen – in Kontakt mit
+        der Magierwelt und ihrer Ausbildung.
+\end{itemize}
+
+So sorgen Finder dafür, dass magische Kinder aus Nomag-Familien nicht
+allein mit ihren Erlebnissen bleiben und dass das Magia-Universum für
+alle offen bleibt – unabhängig davon, aus welcher Familie jemand stammt.
+
+\newpage
+
+% =========================================================
+% 3. Zauberstäbe und ihre Bindung
+% =========================================================
+\chapter{Zauberstäbe und ihre Bindung}
+\label{chap:zauberstaebe}
+
+\section{Fokus für innere Magie}
+
+Wenn Magierinnen und Magier in die Pubertät kommen, spüren sie ihre
+innere Magie zum ersten Mal bewusst. Sie merken, dass sie Dinge leicht
+verändern können – ein Gegenstand rutscht ein Stück über den Tisch,
+eine Farbe wirkt plötzlich anders, eine Flamme flackert im richtigen
+Moment.
+
+Diese rohen Effekte zeigen: \emph{Die Magie ist da}.  
+Aber sie sind unzuverlässig, schwer zu kontrollieren und oft an starke
+Gefühle gebunden.
+
+Ein \textbf{Zauberstab} ist dafür da, diese innere Magie:
+
+\begin{itemize}
+  \item zu bündeln,
+  \item zu ordnen,
+  \item und durch \emph{Zaubersprüche} gezielt nach außen zu leiten.
+\end{itemize}
+
+Mit einem passenden Zauberstab wird aus dem Gefühl „ich kann irgendetwas
+verändern“ die Fähigkeit, bewusst und wiederholbar zu zaubern.
+
+\section{Normale Materialien, besondere Kombination}
+
+Zauberstäbe bestehen im Magia-Universum aus ganz normalen Materialien,
+die es auch in der Welt der Nomags gibt. Das Besondere ist nicht das
+Material an sich, sondern die Kombination und die Art, wie Magie darin
+gebunden wird.
+
+In der Regel besteht ein Zauberstab aus zwei Teilen:
+
+\begin{enumerate}
+  \item einem Stück Edelholz,
+  \item und einem Edelstein, der als Fokus dient.
+\end{enumerate}
+
+\subsection*{Edelhölzer}
+
+Für Zauberstäbe werden häufig Hölzer verwendet, die eine gute Struktur
+haben und sich angenehm in der Hand anfühlen. Beispiele sind:
+
+\begin{itemize}
+  \item Haselnuss,
+  \item Eiche,
+  \item Buche,
+  \item seltenere Edelhölzer nach Wahl der Zauberstabmacherinnen und
+        Zauberstabmacher.
+\end{itemize}
+
+Jedes Holz hat einen etwas anderen Charakter – aber dieses Buch legt
+keine festen Regeln fest, welcher Holztyp zu welchem Charakter passen
+muss. Das bleibt dir als Erzählerin oder Spielleiter überlassen.
+
+\subsection*{Edelsteine als Fokus}
+
+Zusätzlich zum Edelholz enthält jeder Zauberstab einen Edelstein. Auch
+dieser ist im Grunde ein ganz normaler Stein, wie man ihn aus der
+Nomag-Welt kennt, zum Beispiel:
+
+\begin{itemize}
+  \item Topas,
+  \item Rubin,
+  \item Amethyst,
+  \item oder ähnliche Edelsteine.
+\end{itemize}
+
+Der Edelstein sitzt meist im Griff oder an der Spitze des Stabs und
+wirkt als \emph{magischer Knotenpunkt}: Hier wird die innere Magie
+der zaubernden Person gesammelt und in den Zauber „übersetzt“.
+
+\section{Herstellung durch Zauberstabmacherinnen und -macher}
+
+Die Kunst, aus Edelholz und Edelstein einen funktionierenden Zauberstab zu
+machen, ist ein eigener Beruf  
+(siehe Abschnitt „Zauberstabmacher und -händler“ in Kapitel
+„Magische Berufe und Talente“, S.~\ref{sec:zauberstabmacher}).
+
+Vereinfacht gesagt passiert bei der Herstellung Folgendes:
+
+\begin{itemize}
+  \item Das Holz wird zugeschnitten, geformt und vorbereitet.
+  \item Der Edelstein wird bearbeitet und so eingesetzt, dass er fest
+        mit dem Holz verbunden ist.
+  \item Durch einen Zauber wird der Stab „geöffnet“,
+        damit er Magie aufnehmen und leiten kann.
+\end{itemize}
+
+Der fertige Zauberstab sieht nach außen oft aus wie ein schöner,
+aber unscheinbarer Holzstab mit einem Stein – erst im Zusammenspiel
+mit einer magischen Person zeigt sich, was er wirklich kann.
+
+\section{Den eigenen Zauberstab finden}
+
+Nicht jeder Zauberstab passt zu jeder Person gleich gut.  
+Wenn eine Magierin oder ein Magier den ersten Stab bekommt, läuft das
+oft so ab:
+
+\begin{enumerate}
+  \item In der Werkstatt der Zauberstabmacherin oder des
+        Zauberstabmachers werden mehrere Stäbe ausprobiert.
+  \item Die Person hält den Stab in der Hand, konzentriert sich und
+        versucht, einen einfachen Zauber zu wirken.
+  \item Bei manchen Stäben passiert kaum etwas, bei anderen fühlt
+        sich die Magie „richtig“ an.
+\end{enumerate}
+
+Der „richtige“ Stab ist meist derjenige, bei dem:
+
+\begin{itemize}
+  \item sich die Magie leicht entfalten lässt,
+  \item der Zauber beim ersten Versuch funktioniert,
+  \item und die Person ein klares Gefühl von Klarheit oder Ruhe spürt.
+\end{itemize}
+
+Es gibt keine perfekte Wissenschaft dahinter – eher ein Zusammenspiel
+aus Erfahrung der Zauberstabmacherinnen und -macher und dem Gefühl der
+Magierinnen und Magier.
+
+\section{Zaubern mit fremden Stäben}
+
+Es ist grundsätzlich möglich, mit einem fremden Zauberstab zu zaubern.
+Magie ist nicht an genau ein einziges Stück Holz gebunden.
+
+Allerdings gibt es typische Unterschiede:
+
+\begin{itemize}
+  \item Die Zauber können schwächer ausfallen.
+  \item Manche Zauber funktionieren erst beim zweiten oder dritten
+        Versuch.
+  \item Es kann zu kleinen Nebeneffekten kommen.
+\end{itemize}
+
+Ein einfaches Beispiel:  
+Jemand möchte mit einem fremden Zauberstab eine schöne Blume entstehen
+lassen. Der Zauber funktioniert – aber statt einer perfekten Blume
+wächst nur ein struppiges Stück Unkraut. Die Magie hat zwar reagiert,
+aber nicht „sauber“.
+
+Solche Effekte können in Geschichten oder Spielen für Humor sorgen,
+aber auch zeigen, wie wichtig die Bindung zwischen Person und Stab ist.
+
+\newpage
+
+% =========================================================
+% 4. Kräuter, Tränke und Alchemie
+% =========================================================
+\chapter{Kräuter, Tränke und Alchemie}
+\label{chap:kraeuter}
+
+\section{Einfache magische Kräuter}
+
+Die Kräuterkunde im Magia-Universum ist bewusst einfach gehalten.
+Es geht nicht um komplizierte Laborarbeit, sondern um den Umgang mit
+ganz normalen Pflanzen, die eine \emph{hohe magische Energie} tragen.
+
+Viele dieser Kräuter sind den Nomags bekannt – etwa als Heilpflanzen
+oder Gewürze. Beispiele sind:
+
+\begin{itemize}
+  \item Salbei,
+  \item Kamille,
+  \item Pfefferminze,
+  \item und ähnliche, alltägliche Kräuter.
+\end{itemize}
+
+Für Nomags sind es einfach Kräuter.  
+Im Magia-Universum gelten sie zusätzlich als \textbf{magiefähige
+Pflanzen}: In ihnen sammelt sich Magie, die sich relativ leicht
+nutzen lässt.
+
+\section{Tränke aus Tee und Auszügen}
+
+Aus solchen Kräutern lassen sich einfache magische Tränke herstellen.
+Die Grundformen sind:
+
+\begin{itemize}
+  \item \textbf{Tee}: Die getrockneten Kräuter werden mit heißem Wasser
+        übergossen und ziehen gelassen.
+  \item \textbf{Auszug in Alkohol}: Die Kräuter werden in ein Glas
+        oder eine Flasche mit Alkohol gelegt, so dass ein kräftiger
+        Sud entsteht.
+\end{itemize}
+
+Ohne Magie wären das einfach Kräutertee oder Tinkturen.  
+Damit daraus ein \emph{Trank} wird, braucht es einen zusätzlichen
+Schritt.
+
+\section{Aktivierung durch botanische Zaubersprüche}
+
+Die in den Kräutern gespeicherte Magie ist zunächst passiv.  
+Damit sie wirksam wird, muss sie \textbf{aktiviert} werden. Das
+geschieht durch einen einfachen, speziellen \emph{botanischen
+Zauberspruch}.
+
+Der Ablauf ist dabei ungefähr so:
+
+\begin{enumerate}
+  \item Die Kräuter werden vorbereitet (gepflückt, getrocknet,
+        aufgegossen oder in Alkohol eingelegt).
+  \item Die Magierin, der Magier oder die Kräuterkundige nimmt den
+        Tee oder Auszug zur Hand.
+  \item Ein kurzer Zauberspruch wird gesprochen, der auf die Pflanze
+        und ihre Wirkung abgestimmt ist (siehe der Zauber „Herba Vivens“ in Kapitel „Zaubersprüche“, S.~\ref{chap:zaubersprueche}).].
+\end{enumerate}
+
+Erst durch diesen Spruch „springt“ die Magie im Kraut an und verbindet
+sich mit dem Getränk. Danach wirkt der Trank – je nach Pflanze –
+beruhigend, stärkend, klärend oder auf andere einfache Weise.
+
+Die genauen Worte der botanischen Zaubersprüche können je nach Schule,
+Region oder Tradition variieren. Dieses Buch schreibt keine festen
+Formeln vor, sondern lässt dir Freiheit, eigene Sprüche zu erfinden.
+
+\section{Kräuterkundige als Heilerinnen und Heiler}
+
+Menschen mit besonderem Talent für Kräuter werden \textbf{Kräuterkundige}
+genannt. Sie haben ein gutes Gefühl dafür,
+
+\begin{itemize}
+  \item wann ein Kraut besonders „voll“ mit Magie ist,
+  \item welche Pflanzen sich gut kombinieren lassen,
+  \item und wie lange ein Trank ziehen oder reifen sollte.
+\end{itemize}
+
+Kräuterkundige sind in der magischen Welt gleichzeitig:
+
+\begin{itemize}
+  \item \textbf{Heilerinnen und Heiler} – sie versorgen Verletzte oder
+        Erschöpfte mit passenden Tränken,
+  \item \textbf{Apothekerinnen und Apotheker} – sie lagern, mischen
+        und verteilen Kräuter und fertige Tränke,
+  \item und oft auch \textbf{Beraterinnen und Berater} – sie wissen,
+        welches Kraut zu welcher Situation passt.
+\end{itemize}
+
+Viele magische Gemeinschaften haben mindestens eine Kräuterkundige
+oder einen Kräuterkundigen, an die/den sich alle wenden, wenn es um
+Gesundheit, Schlaf, Nerven oder Erholung geht  
+(siehe auch Abschnitt „Kräuterkundige und Trankmeister“ in Kapitel
+„Magische Berufe und Talente“, S.~\ref{sec:kraeuterkundige}).
+
+\section{Einfache, klare Heilkunst}
+
+Die Kräuterkunde im Magia-Universum soll leicht verständlich bleiben:
+
+\begin{itemize}
+  \item Es werden alltägliche Pflanzen genutzt.
+  \item Die Zubereitung ist simpel (Tee oder Auszug).
+  \item Ein kurzer botanischer Zauberspruch aktiviert die Magie.
+\end{itemize}
+
+So können Kräuterkundige und Magierinnen bzw. Magier ohne großen
+Aufwand im Alltag mit magischen Tränken arbeiten – als Teil einer
+überschaubaren, bodenständigen Heilkunst.
+
+\newpage
+
+% =========================================================
+% 5. Magische Wesen und Tiere
+% =========================================================
+\chapter{Magische Wesen und Tiere}
+\label{chap:wesen}
+
+Dieses Kapitel beschreibt \textbf{magische Tierwesen}, die auf einer
+einfachen Idee beruhen:
+
+\begin{quote}
+  Tiere sind zunächst ganz normale Tiere –  
+  ihre Magie wird durch Zaubersprüche entfaltet.
+\end{quote}
+
+\section{Normale Tiere als Ausgangspunkt}
+
+In der Welt des Magia-Universums leben Tiere, wie man sie auch aus der
+Nomag-Welt kennt: Pferde, Hunde, Katzen, Vögel, Fische und viele mehr.
+Sie sind zunächst völlig gewöhnliche Lebewesen ohne sichtbare Magie.
+
+Magie erschafft nichts aus dem Nichts (siehe Kapitel
+„Die Magie des Magia-Universums“, S.~\ref{chap:magie}).  
+Statt „fertige“ Fantasiewesen zu erfinden, wird im Magia-Universum
+mit dem gearbeitet, was bereits da ist: Ein Tier wird \textbf{gezähmt}
+und anschließend durch Zaubersprüche (siehe den Zauber „Bestia Muta“ in Kapitel „Zaubersprüche“, S.~\ref{chap:zaubersprueche}) in ein magisches Tierwesen
+verwandelt.
+
+\section{Verwandlung durch Zaubersprüche}
+
+Die Verwandlung funktioniert ähnlich wie bei Kräutern und Tränken
+(siehe Kapitel „Kräuter, Tränke und Alchemie“, S.~\ref{chap:kraeuter}):
+
+\begin{enumerate}
+  \item Ein Tier wird ausgewählt und gezähmt. Es muss der magischen
+        Person vertrauen oder zumindest ruhig bleiben.
+  \item Eine Magierin oder ein Magier wirkt einen passenden Zauber,
+        der speziell auf diese Tierart abgestimmt ist.
+  \item Die in der Umgebung oder im Tier vorhandene Magie wird
+        \emph{entfaltet} und mit dem Körper des Tieres verbunden.
+\end{enumerate}
+
+Das Ergebnis ist ein \textbf{magisches Tierwesen}: Das Tier behält
+seinen Grundcharakter, erhält aber zusätzliche Fähigkeiten.
+
+\section{Beispiele: Pferde und Pegasi}
+
+Ein klassisches Beispiel sind Pferde:
+
+\begin{itemize}
+  \item Ein normales Pferd wird sorgfältig gezähmt.
+  \item Anschließend wirkt eine erfahrene Magierin oder ein erfahrener
+        Magier einen Flug-Zauberspruch, der auf Pferde zugeschnitten ist.
+  \item Die Magie entfaltet sich – das Pferd erhält Flügel oder eine
+        andere Form von Flugfähigkeit.
+\end{itemize}
+
+So entsteht ein \textbf{Pegasus} (oder ein vergleichbares Flugpferd),
+das sich vom Grundtier klar unterscheidet, aber erkennbar ein Pferd
+mit zusätzlicher Magie bleibt.
+
+Pegasi können:
+
+\begin{itemize}
+  \item als Reittiere dienen,
+  \item im Transport eingesetzt werden,
+  \item oder in Geschichten eine besondere, edle Rolle spielen.
+\end{itemize}
+
+\section{Fliegen mit magischen Tierwesen}
+
+Magische Tierwesen sind eine Alternative zu Flugbesen
+(siehe Kapitel „Besen und andere Fluggeräte“, S.~\ref{chap:besen}).
+
+Um mit ihnen zu fliegen, braucht es:
+
+\begin{itemize}
+  \item ein gezähmtes, magisch verwandeltes Tierwesen,
+  \item eine Reiterin oder einen Reiter mit Grundkenntnissen im
+        Umgang mit magischen Tieren,
+  \item und meist einen einfachen Lenkzauber oder eine Bindung
+        zwischen Mensch und Tier, damit Flugrichtung und Höhe
+        gut steuerbar sind.
+\end{itemize}
+
+Für den Transport-Bereich (siehe Abschnitt „Magischer Transport und
+Logistik“, S.~\ref{sec:transport}) können Pegasi oder ähnliche
+magische Tierwesen eingesetzt werden, wenn:
+
+\begin{itemize}
+  \item lebende Flugpartner gewünscht sind,
+  \item der Transport nicht nur funktional, sondern auch symbolisch
+        wichtig ist (z.B. feierliche Ankunft),
+  \item oder in Regionen, in denen Besen weniger verbreitet sind.
+\end{itemize}
+
+\section{Weitere einfache magische Tierformen}
+
+Um die Welt überschaubar zu halten, beschränkt sich dieses Buch auf
+wenige, leicht verständliche Beispiele. Du kannst sie jedoch nach
+Belieben erweitern.
+
+Mögliche Varianten:
+
+\begin{itemize}
+  \item \textbf{Magische Boten-Vögel}:  
+        Normale Vögel, die durch einen Zauber Nachrichten besonders
+        zuverlässig und schnell überbringen können.
+  \item \textbf{Wachhunde mit Sinn für Magie}:  
+        Hunde, die nach einem Schutzzauber magische Störungen oder
+        unsichtbare Eindringlinge bemerken und anschlagen.
+  \item \textbf{Katzen mit Spürsinn}:  
+        Katzen, die verwunschene Orte oder verzauberte Gegenstände
+        erspüren und sich dort gerne niederlassen.
+\end{itemize}
+
+Alle diese Tierwesen folgen demselben Muster:
+
+\begin{enumerate}
+  \item normales Tier,
+  \item Zauber zur Entfaltung seiner Magie,
+  \item klare, einfache Zusatzfähigkeit.
+\end{enumerate}
+
+\section{Grenzen und Verantwortung}
+
+Magische Tierwesen bleiben Lebewesen.  
+Sie sind keine Werkzeuge wie Besen, sondern Partner – mit eigenen
+Bedürfnissen und Grenzen.
+
+Darum ist es in vielen magischen Gemeinschaften üblich, dass:
+
+\begin{itemize}
+  \item nur erfahrene Magierinnen und Magier Tiere in magische
+        Tierwesen verwandeln dürfen,
+  \item die Versorgung (Futter, Ruhe, Pflege) klar geregelt ist,
+  \item und übermäßiger Einsatz – etwa bei Transporten – als
+        verantwortungslos gilt.
+\end{itemize}
+
+Für Geschichten und Spiele bietet das viel Raum für Konflikte,
+Freundschaften und besondere Bindungen zwischen Menschen und
+magischen Tierwesen – ohne das System unnötig kompliziert zu machen.
+
+\newpage
+
+% =========================================================
+% 6. Besen und andere Fluggeräte
+% =========================================================
+\chapter{Besen und andere Fluggeräte}
+\label{chap:besen}
+
+\section{Vom Alltagsbesen zum Flugbesen}
+
+Besen sind im Magia-Universum zunächst ganz normale Alltagsgegenstände:
+Holzstiel, Borsten, zum Fegen gedacht.  
+Erst durch Magie werden sie zu \textbf{Flugbesen}.
+
+Die Magie im Besen wird \emph{geweckt}, indem eine Magierin oder ein
+Magier einen einfachen Flug-Zauberspruch wirkt. Dieser Spruch „öffnet“
+den Besen für die vorhandene Magie der zaubernden Person. Ab diesem
+Moment kann der Besen fliegen, solange er von einer magisch begabten
+Person genutzt wird.
+
+Wir sprechen davon, dass die \textbf{Flugmagie des Besens entfaltet}
+wird.
+
+\section{Besondere Hölzer, bessere Flugeigenschaften}
+
+Wie bei Zauberstäben (siehe Kapitel „Zauberstäbe und ihre Bindung“, S.~\ref{chap:zauberstaebe}) spielt auch
+bei Flugbesen das Material eine Rolle.  
+Ein Besen aus einfachem Holz kann durchaus fliegen, aber:
+
+\begin{itemize}
+  \item Besen aus besonderen Hölzern sind in der Regel
+        \textbf{schneller},
+  \item können eine \textbf{höhere Traglast} bewegen,
+  \item und sind oft \textbf{wendiger} in der Luft.
+\end{itemize}
+
+Beispiele für beliebte Hölzer:
+
+\begin{itemize}
+  \item Haselnuss – leicht und gut zu steuern,
+  \item Eiche – robust, hohe Traglast,
+  \item Buche – ausgeglichen, geeignet für Schul- und Alltagsbesen.
+\end{itemize}
+
+Auch hier gilt: Das Buch macht keine harten Regeln, welcher Baum
+welche exakte Flug-Eigenschaft hat. Das kannst du je nach Geschichte
+selbst festlegen.
+
+\section{Fliegen durch Berührung}
+
+Zum Fliegen selbst reicht es im Normalfall, wenn ein Besen von einer
+Magierin oder einem Magier \textbf{berührt} wird. Die innere Magie
+fließt dann in den bereits aktivierten Besen, und dieser hebt ab.
+
+\begin{itemize}
+  \item Manche Talente schaffen es auf Anhieb, einen Besen ruhig
+        starten und landen zu lassen.
+  \item Andere müssen üben, bis sie nicht mehr schlingern oder
+        zu schnell werden.
+\end{itemize}
+
+Fliegen ist also teils Technik, teils Talent.  
+Das macht Flugunterricht in Schulen oder Ausbildungsorten zu einer
+ganz eigenen Erfahrung – inklusive klassischer Anfängerfehler.
+
+\section{Lastenbesen und Transport}
+
+Neben den „normalen“ Flugbesen, die meist für einzelne Personen gedacht
+sind, gibt es \textbf{Lastenbesen}. Das sind verstärkte Besen oder
+besenähnliche Gestelle, deren Magie speziell auf Traglast ausgerichtet
+ist.
+
+Sie werden genutzt für:
+
+\begin{itemize}
+  \item den Transport von Kisten, Vorräten und Ausrüstung,
+  \item kurze innerstädtische Lieferflüge,
+  \item oder als fliegende „Karren“ für magische Gemeinschaften.
+\end{itemize}
+
+Magierinnen und Magier, die ein besonderes Talent für sicheres, ruhiges
+Fliegen haben, arbeiten häufig im Bereich \textbf{magischer Transport}
+(siehe Abschnitt „Magischer Transport und Logistik“ in Kapitel
+„Magische Berufe und Talente“, S.~\ref{sec:transport}).
+
+\section{Fliegen mit magischen Tierwesen}
+
+Neben Besen gibt es auch magische Wesen, die für den Flug genutzt
+werden können – zum Beispiel Pegasi und andere Flugtiere  
+(siehe Kapitel „Magische Wesen und Tiere“, S.~\ref{chap:wesen}).
+
+Im Unterschied zum Besen:
+
+\begin{itemize}
+  \item haben diese Wesen eigenen Willen und eigene Bedürfnisse,
+  \item müssen sie gepflegt, gefüttert und respektiert werden,
+  \item kann die Beziehung zwischen Reiterin/Reiter und Wesen eine
+        wichtige Rolle in Geschichten spielen.
+\end{itemize}
+
+Besen sind damit eher \emph{Werkzeuge}, magische Flugwesen eher
+\emph{Partner}. Beide Varianten können im Magia-Universum parallel
+existieren.
+
+\newpage
+
+% =========================================================
+% 7. Artefakte und mächtige Relikte
+% =========================================================
+\chapter{Artefakte und mächtige Relikte}
+\label{chap:artefakte}
+
+Artefakte sind Gegenstände, in denen Magie dauerhaft gebunden wurde.
+Sie entstehen nicht zufällig, sondern durch bewusste Verzauberung
+(siehe Kapitel „Die Magie des Magia-Universums“, S.~\ref{chap:magie}). Dieses Kapitel
+beschreibt einfache Artefakte, seltene Meisterstücke und das Talent
+der \textbf{Erfinderinnen und Erfinder}.
+
+\section{Einfache Artefakte}
+
+Viele Artefakte beginnen als ganz gewöhnliche Alltagsgegenstände:
+
+\begin{itemize}
+  \item Laternen,
+  \item Werkzeuge,
+  \item Schreibfedern,
+  \item Schmuckstücke,
+  \item einfache Möbelstücke.
+\end{itemize}
+
+Wenn diese Gegenstände aus Material bestehen, das von Natur aus viel
+Magie enthält oder dafür geeignet gemacht wurde, können Magierinnen
+und Magier durch Zaubersprüche dauerhaft eine bestimmte Wirkung in
+ihnen verankern.
+
+Beispiele für einfache Artefakte:
+
+\begin{itemize}
+  \item \textbf{Immerwährende Lampe}:  
+        Eine Laterne, die mit wenig Licht beginnt, sobald es dunkel
+        wird, und im Tageslicht von selbst erlischt.
+  \item \textbf{Selbstschreibende Feder}:  
+        Eine Feder, die das Gesagte einer Person automatisch auf
+        Pergament mitschreibt – solange sie auf den Tisch gelegt ist.
+  \item \textbf{Wärmender Umhang}:  
+        Ein Umhang, der seinen Träger bei Kälte leicht wärmt, ohne
+        ihn zu überhitzen.
+\end{itemize}
+
+Solche Artefakte sind praktisch, aber nicht weltverändernd. Sie sind
+Teil des magischen Alltags und helfen, Geschichten lebendig zu machen,
+ohne die Welt zu kompliziert zu machen.
+
+\section{Das Talent der Erfinderinnen und Erfinder}
+
+\subsection*{Seltene Artefakt-Talente}
+
+Besonders begabte Magierinnen und Magier besitzen das Talent
+\textbf{Erfinder}. Sie werden oft auch einfach als
+\emph{Artefakt-Erfinderinnen} oder \emph{Artefaktschmiede} bezeichnet.
+
+Dieses Talent ist selten. Erfinderinnen und Erfinder können:
+
+\begin{itemize}
+  \item Alltagsgegenstände aus stark magischem Material auswählen,
+  \item die Wirkung ihrer Artefakte sehr gezielt bestimmen,
+  \item und Magie so binden, dass sie stabil und wiederholbar bleibt.
+\end{itemize}
+
+Trotz ihres Talents sind nur wenige ihrer Artefakte wirklich
+außergewöhnlich nützlich – vieles sind Experimente, Spielereien
+oder Dinge, die nur in bestimmten Situationen hilfreich sind.
+
+\subsection*{Beispiele für Artefakte von Erfinderinnen und Erfindern}
+
+Einige mögliche Erfindungen:
+
+\begin{itemize}
+  \item \textbf{Schlüsselkette der Rückkehr}:  
+        Ein gewöhnlicher Metallring, in den Magie gebunden wurde.  
+        Jeder Schlüssel, der daran befestigt wird, kehrt nach einiger
+        Zeit in die Tasche seiner Besitzerin oder seines Besitzers
+        zurück, wenn er verloren geht.
+  \item \textbf{Kleine Schrittsteine}:  
+        Eine Reihe flacher Steine, die, wenn man auf den ersten tritt,
+        nacheinander in der Luft erscheinen und kurz einen Weg über
+        einen Graben oder Fluss bilden. Nach der Nutzung fallen sie
+        wieder zu Boden.
+  \item \textbf{Flüsterkasten}:  
+        Eine kleine, unscheinbare Holzschatulle. Spricht man hinein
+        und schließt sie, kann später eine andere Person die Schatulle
+        öffnen und die Nachricht hören, als wäre sie gerade gesprochen
+        worden.
+\end{itemize}
+
+Solche Artefakte sind bewusst einfach gehalten: Sie eröffnen
+Geschichten, ohne die Welt zu dominieren.  
+Autorinnen und Autoren können beliebig weitere Artefakte erfinden,
+solange sie sich an das Grundprinzip halten:
+
+\begin{quote}
+  Kein Artefakt kann alles –  
+  jedes hat eine klare, begrenzte Funktion.
+\end{quote}
+
+\section{Seltene, mächtige Relikte}
+
+Einige wenige Artefakte gelten als \textbf{Relikte}. Sie sind:
+
+\begin{itemize}
+  \item sehr alt,
+  \item schwer zu verstehen,
+  \item und oft mit der Geschichte der Magierwelt verbunden.
+\end{itemize}
+
+Dieses Buch legt keine festen Relikte fest, sondern empfiehlt, Relikte
+sparsam zu verwenden – als Besonderheiten, um große Geschichten zu
+tragen. Ihre Wirkung sollte immer klar begrenzt sein, auch wenn sie
+beeindruckend ist.
+
+\newpage
+
+% =========================================================
+% 8. Portale und Wege zwischen den Welten
+% =========================================================
+\chapter{Portale und Wege zwischen den Welten}
+\label{chap:portale}
+
+Portale verbinden Orte, Regionen und manchmal ganze Welten. Sie
+funktionieren immer als \textbf{Verbindung zwischen zwei Punkten} –
+nie als „freier“ Durchgang ohne Ziel.
+
+\section{Portalmagierinnen und Portalmagier}
+
+Magierinnen und Magier mit einem besonderen Talent für Portale werden
+häufig \textbf{Portalmagierinnen und -magier} genannt. Im Alltag sagt
+man auch einfach „Portalbauer“, weil sie Portale erzeugen und
+instanthalten können.
+
+Sie sind in der Lage,
+
+\begin{itemize}
+  \item aus normalen Türen,
+  \item oder aus schlichten Rahmen (z.B. Bögen, Holzrahmen, Steinkreise)
+\end{itemize}
+
+durch Zaubersprüche ein aktives Portal zu machen.
+
+\section{Türen, Rahmen und feste Verbindungen}
+
+Ein Portal im Magia-Universum existiert immer \textbf{zwischen zwei
+Türen oder Rahmen}. Es gibt also immer einen \emph{Eingang} und einen
+\emph{Ausgang}:
+
+\begin{itemize}
+  \item Auf der einen Seite steht eine Tür oder ein Rahmen an Ort A.
+  \item Auf der anderen Seite steht eine Tür oder ein Rahmen an Ort B.
+  \item Die Portalmagierin oder der Portalmagier „verknüpft“ beide
+        Seiten durch einen oder mehrere Zaubersprüche.
+\end{itemize}
+
+Wichtig: Die Türen oder Rahmen selbst können zunächst ganz normal und
+unmagisch sein. Erst der Portalzauber macht sie zu einem magischen
+Durchgang.
+
+\section{Aktivierung durch Zaubersprüche}
+
+Ein eingerichtetes Portal ist nicht dauerhaft offen.  
+Damit eine Magierin oder ein Magier hindurchgehen kann, muss das Portal
+\textbf{aktiviert} werden.
+
+Typischer Ablauf:
+
+\begin{enumerate}
+  \item Die Person stellt sich vor die Tür oder in den Rahmen.
+  \item Ein kurzer Aktivierungszauber wird gesprochen oder gedacht(siehe den Zauber „Porta Aperi“ in Kapitel „Zaubersprüche“, S.~\ref{chap:zaubersprueche}).
+  \item Die Fläche im Rahmen (oder hinter der Tür) verändert sich –
+        zum Beispiel wirkt sie dunkler, schimmernd oder leicht
+        verzerrt.
+  \item Tritt die Person hindurch, erscheint sie auf der anderen Seite
+        des Portals, an der verbundenen Tür oder im zweiten Rahmen.
+\end{enumerate}
+
+Nach der Durchquerung kann sich das Portal wieder \emph{schließen} –
+entweder automatisch oder nach einem weiteren Spruch. Dadurch sind
+Portale kontrollierbar und nicht ständig offen.
+
+\section{Portalräume und Knotenpunkte}
+
+In vielen magischen Gemeinschaften gibt es \textbf{Portalräume}:
+Räume, in denen mehrere Türen oder Rahmen stehen, die zu unterschiedlichen
+Orten führen können. Solche Räume sind oft stark geschützt und werden
+nur von ausgewählten Personen genutzt.
+
+Mehrere Portalräume zusammen bilden ein \textbf{Netz} von Knotenpunkten.
+Einer der ältesten und wichtigsten dieser Knoten ist:
+
+\subsection*{Stonehenge – der uralte Knoten}
+
+\emph{Stonehenge} ist ein uralter Steinkreis, der als zentraler Knoten
+zwischen vielen bedeutenden Orten der Magierwelt dient. Seine Merkmale:
+
+\begin{itemize}
+  \item Steine, die als natürliche Rahmen dienen,
+  \item und eine lange Tradition als neutraler Durchgangsort.
+\end{itemize}
+
+Portalmagierinnen und -magier können dort Verbindungen zu anderen
+Knotenpunkten schalten. Stonehenge eignet sich daher gut als Schauplatz
+für Treffen, Reisen und große Ereignisse im Magia-Universum.
+
+\section{Stabile und temporäre Portale}
+
+Zur Vereinfachung unterscheidet dieses Buch zwei Arten:
+
+\begin{itemize}
+  \item \textbf{Stabile Portale}:  
+        Dauerhafte Verbindungen zwischen wichtigen Orten. Sie werden
+        sorgfältig eingerichtet, geschützt und regelmäßig überprüft.
+  \item \textbf{Temporäre Portale}:  
+        Kurzzeitige Verbindungen, die für eine Reise oder ein
+        bestimmtes Ereignis geschaffen und danach wieder
+        „aufgelöst“ werden.
+\end{itemize}
+
+Beide Arten folgen denselben Grundregeln: Es braucht Türen oder Rahmen,
+eine Verbindung zwischen zwei Orten und eine Aktivierung durch
+Zaubersprüche.
+
+\section{Risiken des Reisens durch Portale}
+
+Portale sind praktisch, aber nicht ganz ohne Risiko:
+
+\begin{itemize}
+  \item Fehler in der Verknüpfung können dazu führen, dass niemand
+        hindurchgehen sollte, bis sie behoben sind.
+  \item Ungeübte Personen können desorientiert sein, wenn sie ein
+        Portal verlassen (Schwindel, kurze Orientierungslosigkeit).
+  \item Fremde, die unbefugt Portale nutzen, können Sicherheitsprobleme
+        verursachen – deshalb sind Portalräume oft geschützt.
+\end{itemize}
+
+Wie stark diese Risiken in Geschichten oder Spielen eine Rolle
+spielen, hängt von der gewünschten Tonlage ab – dieses Buch liefert
+nur die einfache Grundlogik.
+
+\newpage
+
+% =========================================================
+% 9. Magische Orte und Zonen der Macht
+% =========================================================
+\chapter{Magische Orte und Zonen der Macht}
+\label{chap:orte}
+
+Magische Orte sind im Kern zunächst \textbf{normale Orte}: Dörfer,
+Höfe, Türme, Wälder, Ruinen oder sogar einzelne Häuser. Erst durch
+gezielte Magie werden sie zu besonderen, geschützten Zonen.
+
+\section{Baumeisterinnen und Baumeister}
+
+Magierinnen und Magier mit dem Talent \textbf{Baumeister} sind darauf
+spezialisiert, Orte dauerhaft zu verändern. Sie kombinieren:
+
+\begin{itemize}
+  \item Schutzzauber,
+  \item Wahrnehmungszauber,
+  \item und strukturelle Magie (z.B. an Wänden, Wegen, Grenzen),
+\end{itemize}
+
+um einen Ort in einen \textbf{magischen Ort} zu verwandeln.
+
+Sie arbeiten oft eng mit Portalmagierinnen und Portalmagiern
+zusammen, wenn an einem Ort auch Portale eingerichtet werden sollen
+(siehe Kapitel „Portale und Wege zwischen den Welten“, S.~\ref{chap:portale}).
+
+\section{Unsichtbar für Nomags}
+
+Viele magische Orte sind so gestaltet, dass Nomags sie nicht wahrnehmen
+oder nicht als Besonderheit erkennen. Typische Effekte:
+
+\begin{itemize}
+  \item Nomags sehen anstelle eines Turms nur ein altes, verlassenes
+        Gebäude.
+  \item Ein magischer Hof wirkt von außen wie ein normaler Bauernhof,
+        obwohl im Inneren viel mehr passiert.
+  \item Wege zu bestimmten Orten „fallen Nomags nicht auf“, so dass
+        sie sie selten zufällig betreten.
+\end{itemize}
+
+Für Magierinnen, Magier und andere magische Wesen bleibt der Ort
+hingegen sichtbar und betretbar – oft über bestimmte Wege, Zeichen
+oder Portale.
+
+\section{Schutz und Sicherheit}
+
+Neben Unsichtbarkeit werden magische Orte häufig durch einfache,
+klare Schutzregeln gesichert:
+
+\begin{itemize}
+  \item Grenzen, die Unbefugte nicht überschreiten können,
+  \item Warnzauber, die bei unerwünschtem Besuch reagieren,
+  \item Bereiche, in denen bestimmte Arten von Magie gedämpft werden,
+        um Unfälle zu vermeiden.
+\end{itemize}
+
+Baumeisterinnen und Baumeister sorgen dafür, dass solche Schutzschichten
+nicht zu kompliziert werden: Ziel ist ein Ort, der sich sicher
+anfühlt, aber im Alltag gut nutzbar bleibt.
+
+\section{Beispiele für magische Orte}
+
+Zur Inspiration einige einfache Beispiele:
+
+\begin{itemize}
+  \item \textbf{Versteckte Schule}:  
+        Eine Schule für Magierinnen und Magier, die in einem Wald
+        liegt und für Nomags wie ein normaler Forst aussieht.
+  \item \textbf{Geschützter Markt}:  
+        Ein Platz in einer Stadt, der zu bestimmten Zeiten als Markt
+        für magische Waren dient. Nomags laufen achtlos daran vorbei,
+        ohne den Markt wirklich wahrzunehmen.
+  \item \textbf{Sicherer Zufluchtsort}:  
+        Ein Haus oder eine Höhle, in der magische Schutzkreise aktiv
+        sind und in dem Verfolgte oder Erschöpfte zur Ruhe kommen
+        können.
+\end{itemize}
+
+All diese Orte beginnen als normale Plätze und werden erst durch
+das Talent der Baumeisterinnen und Baumeister zu magischen Orten.
+
+\newpage
+
+% =========================================================
+% 10. Magische Berufe und Talente
+% =========================================================
+
+% =========================================================
+% 11. Zaubersprüche
+% =========================================================
+
+\chapter{Zaubersprüche}
+\label{chap:zaubersprueche}
+
+In diesem Kapitel werden die wichtigsten Zaubersprüche des Magia-Universums aufgeführt. Sie folgen einem einheitlichen Schema, das sowohl für das Erlernen im Rollenspiel als auch für die Beschreibung in Geschichten hilfreich ist.
+
+Das Schema lautet:
+\begin{itemize}
+    \item \textbf{Name:} Lateinische Ableitung, gut sprechbar.
+    \item \textbf{Beschreibung:} Was bewirkt der Zauber?
+    \item \textbf{Anwendung:} Die gesprochene Formel und die Bewegung.
+    \item \textbf{Komplexität:} Einschätzung der Schwierigkeit (Einfach, Mittel, Schwer).
+\end{itemize}
+
+\section{Allgemeine Zauber}
+
+Diese Zauber finden sich in vielen Lebensbereichen wieder und wurden teils bereits in vorherigen Kapiteln angedeutet.
+
+\subsection*{Lichtzauber}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Lumen}
+    \item \textbf{Beschreibung:} Erzeugt eine kleine, schwebende Lichtkugel an der Spitze des Zauberstabs oder lässt sie an einem Ort verweilen. Dient als Taschenlampe oder Laternenersatz.
+    \item \textbf{Anwendung:} \emph{„Lumen“} – Ein einfaches Antippen der Luft oder des Gegenstandes, der leuchten soll.
+    \item \textbf{Komplexität:} Einfach.
+\end{itemize}
+
+\subsection*{Schwebezauber / Flug-Aktivierung}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Levitas}
+    \item \textbf{Beschreibung:} Lässt Gegenstände schweben oder aktiviert die Flugmagie in Besen (siehe Kapitel „Besen und andere Fluggeräte“, S.~\ref{chap:besen}). Bei Besen ist dies der „Zündschlüssel“.
+    \item \textbf{Anwendung:} \emph{„Levitas“} – Eine langsame, aufsteigende Bewegung mit dem Stab.
+    \item \textbf{Komplexität:} Mittel (benötigt Konzentration auf das Gewicht).
+\end{itemize}
+
+\subsection*{Portal-Aktivierung}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Porta Aperi}
+    \item \textbf{Beschreibung:} Aktiviert ein bereits bestehendes, inaktives Portal (siehe Kapitel „Portale und Wege zwischen den Welten“, S.~\ref{chap:portale}). Ohne diesen Spruch bleibt der Rahmen nur ein Rahmen.
+    \item \textbf{Anwendung:} \emph{„Porta Aperi“} – Ein gezieltes Tippen auf den Rahmen oder die Türschwelle.
+    \item \textbf{Komplexität:} Einfach (wenn das Portal stabil ist).
+\end{itemize}
+
+\subsection*{Botanische Aktivierung}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Herba Vivens}
+    \item \textbf{Beschreibung:} Aktiviert die schlafende Magie in Kräutern für Tränke (siehe Kapitel „Kräuter, Tränke und Alchemie“, S.~\ref{chap:kraeuter}). Ohne diesen Spruch ist der Trank nur Tee oder ein Aufguss.
+    \item \textbf{Anwendung:} \emph{„Herba Vivens“} – Eine kreisende Bewegung über dem Gefäß.
+    \item \textbf{Komplexität:} Einfach.
+\end{itemize}
+
+\subsection*{Tier-Verwandlung}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Bestia Muta}
+    \item \textbf{Beschreibung:} Entfaltet die Magie in einem Tier, um ihm neue Eigenschaften zu geben (z.B. Flügel für ein Pferd, siehe Kapitel „Magische Wesen und Tiere“, S.~\ref{chap:wesen}). Dies ist ein Ritual-Spruch, der oft lange dauert.
+    \item \textbf{Anwendung:} \emph{„Bestia Muta“} – Komplexe, nachzeichnende Bewegungen über dem Körper des Tieres.
+    \item \textbf{Komplexität:} Schwer (nur für erfahrene Magier).
+\end{itemize}
+
+\section{Zauber des Handwerks und der Erschaffung}
+
+Nicht jede Magie lässt sich in einen kurzen Spruch und eine schnelle Handbewegung fassen. Große, dauerhafte Veränderungen – wie das Erschaffen von Verbindungen oder das Binden von Magie in Gegenstände – gehören zur \textit{hohen Handwerkskunst}. Diese Magie wird meist nicht im Gefecht oder im Vorbeigehen gewirkt, sondern in der Ruhe einer Werkstatt oder durch langfristige Rituale am Ort des Geschehens.
+
+Da diese Prozesse oft Stunden oder Tage dauern und stark vom verwendeten Material abhängen, gibt es hierfür keine universellen Formeln. Stattdessen nutzen Spezialistinnen und Spezialisten individuelle Verkettungen von Zaubern.
+
+\begin{itemize}
+    \item \textbf{Portalbau:} Das Erschaffen einer dauerhaften Verbindung zwischen zwei Orten (siehe Kapitel „Portale und Wege zwischen den Welten“, S.~\ref{chap:portale}) gleicht eher magischer Architektur als einem einzelnen Zauber.
+    \item \textbf{Ortsschutz:} Ein ganzes Gebiet für Fremde unsichtbar oder unzugänglich zu machen (siehe Kapitel „Magische Orte und Zonen der Macht“, S.~\ref{chap:orte}), erfordert das geduldige Verweben von Schutzzaubern mit der Umgebung selbst.
+    \item \textbf{Artefakterschaffung:} Das dauerhafte Binden einer Wirkung in einen Gegenstand (siehe Kapitel „Artefakte und mächtige Relikte“, S.~\ref{chap:artefakte}) ist ein komplexer Prozess, bei dem Magie im Material „versiegelt“ wird.
+    \item \textbf{Zauberstabherstellung:} Obwohl technisch eine Form der Artefakterschaffung (siehe Kapitel „Zauberstäbe und ihre Bindung“, S.~\ref{chap:zauberstaebe}), liegt der Fokus hier darauf, einen perfekten Kanal für die persönliche Magie des späteren Besitzers zu formen.
+\end{itemize}
+
+Für das Erzählen von Geschichten bedeutet das: In diesen Bereichen murmeln die Charaktere keine schnellen Reime, sondern sie arbeiten konzentriert, nutzen Werkzeuge und investieren Zeit.
+
+\section{Kampf- und Verteidigungszauber}
+
+Diese Zauber dienen dem Schutz oder dem magischen Duell. Sie erfordern oft schnelle Reaktionen.
+
+\subsection*{Lufthieb}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Aero Ictus}
+    \item \textbf{Beschreibung:} Ein stoßartiger Windschlag, der Gegner zurückwirft oder aus dem Gleichgewicht bringt. Nicht tödlich, aber schmerzhaft wie ein Schlag.
+    \item \textbf{Anwendung:} \emph{„Aero Ictus“} – Eine scharfe, peitschenartige Hieb-Bewegung in Richtung Ziel.
+    \item \textbf{Komplexität:} Einfach (Instinktiv).
+\end{itemize}
+
+\subsection*{Schleudern / Werfen}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Jactare}
+    \item \textbf{Beschreibung:} Packt einen Gegenstand (oder kleinen Gegner) telekinetisch und schleudert ihn weg.
+    \item \textbf{Anwendung:} \emph{„Jactare“} – Eine Greifbewegung mit dem Stab, gefolgt von einem Wegschleudern.
+    \item \textbf{Komplexität:} Mittel.
+\end{itemize}
+
+\subsection*{Physischer Block}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Obex Durus}
+    \item \textbf{Beschreibung:} Erschafft kurzzeitig eine unsichtbare Barriere gegen feste Gegenstände (Steine, Fäuste, Waffen). Hält nicht ewig, zerspringt bei zu viel Wucht.
+    \item \textbf{Anwendung:} \emph{„Obex Durus“} – Eine waagerechte Linie vor dem Körper ziehen.
+    \item \textbf{Komplexität:} Mittel.
+\end{itemize}
+
+\subsection*{Magischer Block}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Obex Magicus}
+    \item \textbf{Beschreibung:} Dient dazu, feindliche Zauber (wie den Lufthieb) abzufangen oder zu zerstreuen.
+    \item \textbf{Anwendung:} \emph{„Obex Magicus“} – Eine senkrechte Linie, die den gegnerischen Zauber „durchschneidet“.
+    \item \textbf{Komplexität:} Mittel bis Schwer (Timing ist entscheidend).
+\end{itemize}
+
+\subsection*{Wasser-Kontrolle}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Aqua Regere}
+    \item \textbf{Beschreibung:} Formt und bewegt vorhandenes Wasser. Kann als Wasserstrahl, Schild oder Welle genutzt werden. Sehr fähige Magier können Wasserpartikel aus der Luft ziehen (extrem anstrengend).
+    \item \textbf{Anwendung:} \emph{„Aqua Regere“} – Fließende, wellenartige Bewegungen, die das Wasser leiten.
+    \item \textbf{Komplexität:} Mittel (vorhandenes Wasser) bis Extrem Schwer (aus der Luft).
+\end{itemize}
+
+\subsection*{Feuer entfachen}
+\begin{itemize}
+    \item \textbf{Name:} \emph{Ignis Fero}
+    \item \textbf{Beschreibung:} Entzündet brennbares Material. Da auch Luft unter bestimmten Bedingungen brennen kann, ist dies gefährlich. Reine Feuerbälle aus dem „Nichts“ sind extrem schwer, meist wird vorhandenes Material entzündet.
+    \item \textbf{Anwendung:} \emph{„Ignis Fero“} – Ein schnelles Stechen auf das Ziel.
+    \item \textbf{Komplexität:} Schwer (hohe Gefahr des Kontrollverlusts).
+\end{itemize}
+
+\chapter{Magische Berufe und Talente}
+\label{chap:berufe}
+
+Dieses Kapitel beschreibt wichtige Rollen innerhalb der magischen
+Gesellschaft des Magia-Universums. Es soll als Vorlage für Figuren,
+Fraktionen und Organisationen dienen.
+
+\section{Der Magierrat}
+
+Der Magierrat ist das zentrale beratende oder herrschende Gremium
+der Magierwelt (je nach Interpretation der Nutzerinnen und Nutzer
+dieses Universums). Hier werden Aufbau, Aufgaben und Befugnisse
+festgelegt.
+
+\section{Finder – Nomags mit magischem Erbe}
+
+\emph{Finder} sind Nomags, die aus Magierfamilien stammen oder eine
+besondere Sensibilität für Magie besitzen, ohne selbst aktiv zu
+zaubern. Sie spüren Spuren der Magie auf, entdecken Talente oder
+verlorene Artefakte.
+
+\section{Zauberstabmacher und -händler}
+\label{sec:zauberstabmacher}
+
+Zauberstabmacherinnen und Zauberstabmacher sind weit mehr als einfache Handwerker. Sie sind Hüter eines alten Wissens, das Magie mit physischer Materie verbindet. Ihre Arbeit bildet das Fundament für das Zaubern selbst, da ohne ihre Werkzeuge die meisten Talente unkontrolliert blieben.
+
+\subsection*{Die Kunst der Herstellung}
+Die Erschaffung eines Zauberstabs ist ein Prozess, der Geduld und eine tiefe Intuition erfordert. Es reicht nicht, Holz und Kern zusammenzufügen; die Komponenten müssen aufeinander abgestimmt und magisch versiegelt werden.
+\begin{itemize}
+    \item \textbf{Materialwahl:} Sie spüren, welches Edelholz mit welchem Kern harmoniert. Eine falsche Kombination würde zu einem instabilen oder „tauben“ Stab führen.
+    \item \textbf{Versiegelung:} Durch komplexe Handwerksmagie (siehe Kapitel \ref{chap:zaubersprueche}, Abschnitt „Zauber des Handwerks“) verbinden sie die Komponenten dauerhaft zu einer Einheit.
+\end{itemize}
+
+\subsection*{Händler und Hüter}
+Nicht jeder, der mit Zauberstäben handelt, stellt sie auch her. Händlerinnen und Händler spielen eine wichtige Rolle dabei, alte oder vererbte Stäbe wieder in den Umlauf zu bringen.
+\begin{itemize}
+    \item \textbf{Vererbung:} Oft kehren Stäbe nach dem Tod ihres Besitzers in den Handel zurück. Händler reinigen diese Stäbe rituell von der Bindung an den Vorbesitzer, damit sie bereit für eine neue Hand sind.
+    \item \textbf{Beratung:} Ob neu gefertigt oder alt – die wichtigste Aufgabe ist das „Matching“. Sie beobachten genau, wie ein Kunde auf verschiedene Stäbe reagiert, und verhindern so gefährliche Fehlkäufe.
+\end{itemize}
+
+\subsection*{Der Kodex}
+Die Zunft der Zauberstabmacher folgt einem strengen, ungeschriebenen Kodex: Ein Stab wird nie wissentlich an jemanden verkauft, der damit das Gleichgewicht der Magie mutwillig zerstören will. Auch wenn sie nicht für die Taten ihrer Kunden haften, sehen sich viele als erste Verteidigungslinie gegen den Missbrauch roher magischer Kraft.
+
+\section{Kräuterkundige und Trankmeister}
+\label{sec:kraeuterkundige}
+
+Kräuterkundige und Trankmeisterinnen bzw. Trankmeister sind die
+\textbf{Heilerinnen und Heiler} der magischen Welt. Sie arbeiten mit
+einfachen Kräutern und magisch aktivierten Tränken und bilden damit
+so etwas wie die Apotheke und Hausarztpraxis des Magia-Universums.
+
+\subsection*{Typische Aufgaben}
+
+Im Alltag kümmern sie sich vor allem um:
+
+\begin{itemize}
+  \item kleine und mittlere Verletzungen,
+  \item Erschöpfung nach starker Magienutzung,
+  \item Schlafprobleme, Nervosität und innere Unruhe,
+  \item Unterstützung bei Genesung nach Unfällen oder magischen
+        Zwischenfällen.
+\end{itemize}
+
+Dazu sammeln sie Kräuter, trocknen sie, stellen Tees und Auszüge her
+und sprechen die botanischen Zaubersprüche, die die Magie der Pflanzen
+aktivieren (siehe Kapitel „Kräuter, Tränke und Alchemie“, S.~\ref{chap:kraeuter}).
+
+\section{Magischer Transport und Logistik}
+\label{sec:transport}
+
+Magischer Transport und Logistik umfasst alle, die sich darum kümmern,
+dass Personen, Gegenstände und manchmal auch magische Wesen sicher von
+Ort zu Ort kommen.
+
+Typische Mittel sind:
+
+\begin{itemize}
+  \item \textbf{Flugbesen und Lastenbesen}  
+        (siehe Kapitel „Besen und andere Fluggeräte“, S.~\ref{chap:besen}),
+  \item Portale für größere Distanzen (siehe Kapitel „Portale und Wege zwischen den Welten“, S.~\ref{chap:portale}),
+  \item und in manchen Regionen auch reitbare \textbf{magische Wesen}
+        (siehe Kapitel „Magische Wesen und Tiere“, S.~\ref{chap:wesen}).
+\end{itemize}
+
+Magierinnen und Magier mit besonderem Talent fürs Fliegen übernehmen
+oft Aufgaben in diesem Bereich. Sie sind geübt darin,
+
+\begin{itemize}
+  \item mit Lastenbesen schwere oder viele Gegenstände zu transportieren,
+  \item auch bei Wind, Regen oder magischen Störungen ruhig zu fliegen,
+  \item und Flugrouten so zu planen, dass sie unauffällig und sicher sind.
+\end{itemize}
+
+In Geschichten können sie als:
+
+\begin{itemize}
+  \item Lieferdienst für magische Gemeinschaften,
+  \item Begleiterinnen und Begleiter für gefährliche Reisen,
+  \item oder als Teil größerer Transportnetzwerke auftreten.
+\end{itemize}
+
+\section{Baumeister von Portalen und magischen Orten}
+
+Baumeisterinnen und Baumeister sind die Architekten der unsichtbaren Welt. Wo andere Magie nutzen, um kurzfristige Effekte zu erzielen, schaffen sie Strukturen, die Jahrzehnte oder Jahrhunderte überdauern. Ihre Arbeit ist keine spontane Handlung, sondern eine präzise Wissenschaft, die Magietheorie mit klassischer Architektur und Ritualkunst verbindet.
+
+\textbf{Erschaffer von Verbindungen}
+Ein Schwerpunkt ihrer Arbeit liegt auf der Konstruktion und Wartung von Portalen (siehe Kapitel „Portale und Wege zwischen den Welten“, S.~\ref{chap:portale}).
+\begin{itemize}
+    \item \textbf{Knotenpunkte:} Sie berechnen und stabilisieren die magischen Linien zwischen zwei Orten. Ein Fehler in dieser „Statik“ könnte dazu führen, dass Reisende im Nichts stranden.
+    \item \textbf{Integration:} Sie sorgen dafür, dass Portalrahmen – seien es Türstöcke, Torbögen oder Steinkreise – physisch stabil sind und sich harmonisch in ihre Umgebung einfügen.
+\end{itemize}
+
+\textbf{Gestalter magischer Orte}
+Ihr zweites großes Feld ist die Sicherung und Tarnung ganzer Areale (siehe Kapitel „Magische Orte und Zonen der Macht“, S.~\ref{chap:orte}).
+\begin{itemize}
+    \item \textbf{Schutzarchitektur:} Sie weben Schutzzauber direkt in das Fundament oder das Mauerwerk eines Gebäudes ein. Anders als ein temporärer Schild, der aufrechterhalten werden muss, „steht“ dieser Schutz so fest wie eine Wand.
+    \item \textbf{Tarnung:} Sie entwerfen die Wahrnehmungsfilter, die magische Orte vor den Augen von Nomags verbergen. Diese Arbeit erfordert viel Feingefühl, da die Tarnung weder zu schwach sein darf (Entdeckungsgefahr) noch so stark, dass sie auch erwünschte Besucher abweist.
+\end{itemize}
+
+Baumeister arbeiten oft im Hintergrund, doch ohne sie gäbe es keine sicheren Zufluchtsorte und keine schnellen Reisewege. Ihre „Bauwerke“ sind das Skelett der magischen Infrastruktur.
+
+\newpage
+
+% ================== RÜCKSEITE DES EINBANDS ==================
+\backmatter
+\cleardoublepage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+  {\Large Magia Universe}\\[0.5cm]
+  {\itshape
+    Dieses Buch ist nur der Anfang.\\
+    Der Rest des Universums wartet darauf,\\
+    von dir beschrieben zu werden.
+  }\\[1.5cm]
+  {\small
+    Erstellt von \href{https://www.youtube.com/@paulsnerdlounge}{Paul's Nerd Lounge}\\
+    unter der Lizenz CC BY 4.0.
+  }
+\end{center}
+\vspace*{\fill}
+
+\end{document}
