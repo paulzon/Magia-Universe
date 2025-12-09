@@ -1,4 +1,4 @@
-# 📘 Magia Universum -- Richtlinien
+# 📘 Magia Universum - Richtlinien
 
 *Erste Auflage (v1.0)*
 
@@ -13,10 +13,10 @@ erweitern möchten.
 
 Die Richtlinien behandeln unter anderem:
 
--   die grundlegende Struktur des Magia-Universums\
--   magische Systeme und deren Grenzen\
--   Rollen, Wesen und Entitäten\
--   erzählerische Leitlinien\
+-   die grundlegende Struktur des Magia-Universums
+-   magische Systeme und deren Grenzen
+-   Rollen, Wesen und Entitäten
+-   erzählerische Leitlinien
 -   Weltlogik, Konsistenz und Meta-Regeln
 
 Die detaillierte Ausarbeitung befindet sich in der veröffentlichten PDF
@@ -27,7 +27,7 @@ Die detaillierte Ausarbeitung befindet sich in der veröffentlichten PDF
 Die fertige PDF der Version **v1.0** steht im Release-Bereich zur
 Verfügung.
 
-Das zugrunde liegende Dokument wird mit LaTeX erstellt -- Kenntnisse
+Das zugrunde liegende Dokument wird mit LaTeX erstellt - Kenntnisse
 darüber sind jedoch **nicht erforderlich**, um die Richtlinien zu
 nutzen.
 
